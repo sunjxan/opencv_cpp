@@ -22,6 +22,7 @@ int main()
             char str[100];
             sprintf(str, " (%d, %d)", frame.cols, frame.rows);
             windowName += string(str);
+            cv::namedWindow(windowName, cv::WINDOW_AUTOSIZE);
         }
         cv::imshow(windowName, frame);
         if (cv::waitKey(33) >= 0) {
