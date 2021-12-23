@@ -14,7 +14,7 @@ int main()
         return -1;
     }
     
-    int w = image.cols, h = image.rows, d = image.channels();
+    int w = img.cols, h = img.rows, d = img.channels();
     printf("width=%d, height=%d, depth=%d\n", w, h, d);
     
     cv::namedWindow(windowName, cv::WINDOW_AUTOSIZE);

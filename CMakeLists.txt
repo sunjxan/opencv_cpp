@@ -15,7 +15,7 @@ message(STATUS "OpenCV_LIBS:${OpenCV_LIBS}")
 
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-add_executable(opencv_cpp video_capture.cpp)
+add_executable(opencv_cpp imshow.cpp)
 
 link_directories(${OpenCV_LIB_DIR})
 target_link_libraries(opencv_cpp ${OpenCV_LIBS})
